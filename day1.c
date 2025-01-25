@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdint.h>
-#include <stdbool.h>
 #include <string.h> 
 
-#include "./utils/utils.h"
+#include "utils/utils.h"
 
 #define FILENAME "./files/input_day_1.txt"
 #define CHUNK 256
@@ -26,7 +24,7 @@ int main()
 
     // Opens the file
     fp = fopen(FILENAME, "r");
-    openFile(fp, FILENAME, &offset);
+    checkFile(fp, FILENAME, &offset);
     printf("File %s of size %ld bytes is read.\n", FILENAME, offset);
 
     // Generates left and right value tables

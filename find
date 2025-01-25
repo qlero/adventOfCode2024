@@ -1,0 +1,1 @@
+./day1.c -mindepth 2 -name *.c
